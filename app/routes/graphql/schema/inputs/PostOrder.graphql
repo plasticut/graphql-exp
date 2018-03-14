@@ -1,0 +1,10 @@
+enum PostOrderField {
+  name
+  createdAt
+  updatedAt
+}
+
+input PostOrder {
+  field: PostOrderField
+  direction: OrderDirection
+}

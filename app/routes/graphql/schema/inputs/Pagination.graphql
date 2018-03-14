@@ -1,0 +1,7 @@
+# Pagination arguments
+input Pagination {
+  # Skip position
+  skip: Int
+  # limit position
+  limit: Int
+}

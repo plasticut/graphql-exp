@@ -1,0 +1,10 @@
+enum UserOrderField {
+  name
+  createdAt
+  updatedAt
+}
+
+input UserOrder {
+  field: UserOrderField
+  direction: OrderDirection
+}

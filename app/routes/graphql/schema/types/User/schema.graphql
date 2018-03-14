@@ -1,0 +1,7 @@
+type User implements Node {
+  id: ObjectId!
+  createdAt: DateTime
+  updatedAt: DateTime
+  name: String!
+  posts(orderBy: [PostOrder]): [Post]!
+}

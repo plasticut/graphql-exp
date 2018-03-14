@@ -1,0 +1,5 @@
+interface Node {
+  id: ObjectId!
+  createdAt: DateTime
+  updatedAt: DateTime
+}

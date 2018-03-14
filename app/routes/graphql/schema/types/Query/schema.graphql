@@ -1,0 +1,7 @@
+type Query {
+  user(id: ObjectId!): User
+  users(orderBy: [UserOrder]): [User]
+
+  post(id: ObjectId!): Post
+  posts(orderBy: [PostOrder]): [Post]
+}

@@ -1,0 +1,11 @@
+type Mutation {
+  # Create user
+  userCreate(name: String): User
+  # Delete user
+  userDelete(id: ObjectId!): User
+
+  # Create post
+  postCreate(name: String): Post
+  # Delete post
+  postDelete(id: ObjectId!): Post
+}

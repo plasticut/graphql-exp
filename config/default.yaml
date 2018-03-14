@@ -1,0 +1,7 @@
+logger:
+  level: error
+  requests: false
+mongodb:
+  uri: mongodb://localhost/graphql-exp
+port: 3000
+host: 0.0.0.0

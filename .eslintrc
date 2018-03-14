@@ -1,0 +1,67 @@
+{
+    "extends": "google",
+    "env": {
+        "browser": false,
+        "node": true,
+        "es6": true,
+        "mocha": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "globals": {
+        "__base": true
+    },
+    "rules": {
+        "array-callback-return": 0,
+        "arrow-parens": [2, "as-needed"],
+        "arrow-spacing": 2,
+        "comma-dangle": [2, "never"],
+        "curly": 1,
+        "handle-callback-err": 0,
+        "key-spacing": 0,
+        "max-len": [1, {
+            "code": 200,
+            "tabWidth": 2,
+            "ignoreUrls": true
+        }],
+        "max-nested-callbacks": [1, {
+            "max": 9
+        }],
+        "newline-before-return": 0,
+        "no-caller": 0,
+        "no-else-return": 0,
+        "no-empty": 0,
+        "no-extra-semi": 2,
+        "no-invalid-this": 0,
+        "no-lonely-if": 0,
+        "no-multiple-empty-lines": ["error", {
+            "max": 1
+        }],
+        "no-negated-condition": 0,
+        "no-path-concat": 0,
+        "no-space-before-semi": [0, "always"],
+        "no-undef": 1,
+        "no-unused-expressions": 0,
+        "no-unused-vars": 2,
+        "no-use-before-define": 0,
+        "no-var": 0,
+        "no-warning-comments": [0, {
+            "terms": ["todo", "fixme", "xxx"],
+            "location": "start"
+        }],
+        "padded-blocks": 0,
+        "prefer-rest-params": 0,
+        "prefer-spread": 0,
+        "quote-props": 0,
+        "quotes": [0, "single"],
+        "require-jsdoc": 0,
+        "semi": 2,
+        "space-before-blocks": [1, "always"],
+        "space-before-keywords": [0, "always"],
+        "yoda": 0
+    }
+}

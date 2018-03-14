@@ -1,0 +1,9 @@
+# Post type
+type Post implements Node {
+  id: ObjectId!
+  name: String!
+  owner: User!
+  createdAt: DateTime
+  updatedAt: DateTime
+  body: String
+}
