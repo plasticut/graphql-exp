@@ -20,8 +20,8 @@ function promisifyCallback(proto, name) {
     if (isAsyncFunction(callback)) {
       callbackOverride = function(next) {
         callback.call(this)
-          .then(() => next())
-          .catch(err => next(err));
+            .then(() => next())
+            .catch(err => next(err));
       };
     } else {
       callbackOverride = callback;

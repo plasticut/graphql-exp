@@ -6,12 +6,12 @@ module.exports = module => {
     transports: [
       new transports.Console({
         format: format.combine(
-          format.colorize(),
-          format.label({label: module.filename.split('/').slice(-2).join('/')}),
-          format.timestamp(),
-          format.printf(info => {
-            return `${info.timestamp} [${info.label}] ${info.level}: ${info.message}`;
-          })
+            format.colorize(),
+            format.label({label: module.filename.split('/').slice(-2).join('/')}),
+            format.timestamp(),
+            format.printf(info => {
+              return `${info.timestamp} [${info.label}] ${info.level}: ${info.message}`;
+            })
         ),
         level: config.get('logger.level')
       })

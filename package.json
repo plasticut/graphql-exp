@@ -37,8 +37,8 @@
   },
   "scripts": {
     "start": "node ./app",
-    "lint": "eslint $npm_package_config_test_path && eslint src && echo '\\033[0;32mSuccess!\\033[0m\\n'",
-    "lint-n-fix": "eslint --fix $npm_package_config_test_path && eslint --fix src",
+    "lint": "eslint $npm_package_config_test_path && echo '\\033[0;32mSuccess!\\033[0m\\n'",
+    "lint-n-fix": "eslint --fix $npm_package_config_test_path",
     "test": "run() { if [ -z $1 ]; then npm run test-path \"$npm_package_config_test_path/**/*.$npm_package_config_test_ext\"; else for i; do npm run test-path \"$npm_package_config_test_path/$i/**/*.$npm_package_config_test_ext\"; done; fi;}; run",
     "test-path": "NODE_ENV=test mocha --recursive --timeout=$npm_package_config_test_timeout --exit --reporter=spec",
     "coverage": "nyc npm test && nyc report --reporter=text-summary",
